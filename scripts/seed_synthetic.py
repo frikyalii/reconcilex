@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Seed script to populate ReconcileX with the complete synthetic Doyuf dataset.
+"""Seed script to populate ReconcileX with the complete synthetic dataset.
 
 Creates synthetic data sources for:
 1. Orders (8 orders including DY1001, DY1042, DY1043, DY1044, DY1045, DY1046, DY1047, DY1048)
@@ -92,7 +92,7 @@ def seed_all_synthetic_data(session: DatabaseSession) -> dict[str, int]:
 def main() -> int:
     with session_scope() as session:
         counts = seed_all_synthetic_data(session)
-    print("Seeded synthetic Doyuf dataset successfully:")
+    print("Seeded synthetic dataset successfully:")
     for k, v in counts.items():
         print(f"  - {k}: {v} rows imported")
     return 0

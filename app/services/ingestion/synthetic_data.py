@@ -1,4 +1,4 @@
-"""Synthetic dataset generator for ReconcileX (Doyuf luxury e-commerce scenarios).
+"""Synthetic dataset generator for ReconcileX (luxury e-commerce scenarios).
 
 Provides realistic, deterministic synthetic datasets covering:
 1. DY1001 — Clean exact match across Order, Payment Gateway, Finance Ledger, and Inventory.

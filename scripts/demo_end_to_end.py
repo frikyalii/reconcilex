@@ -2,7 +2,7 @@
 """Interactive end-to-end demonstration of the ReconcileX MVP (Scenario DY1042).
 
 Runs the full lifecycle in one command:
-1. Seeds all synthetic Doyuf data sources (Orders, Payment Gateway, Finance Ledger, Refunds, Inventory, Event Logs).
+1. Seeds all synthetic data sources (Orders, Payment Gateway, Finance Ledger, Refunds, Inventory, Event Logs).
 2. Runs the deterministic ReconciliationEngine and prints all detected discrepancies.
 3. Selects Scenario DY1042 (Order DY1042 / Payment TXN9001 missing from finance_ledger).
 4. Runs the LangGraph Discrepancy Investigation workflow and prints cited evidence & candidate root causes.
@@ -71,7 +71,7 @@ def main() -> int:
 
     # Step 1: Seed synthetic dataset
     counts = seed_all_synthetic_data(session)
-    print("\n[Step 1] Seeded Synthetic Doyuf Sources:")
+    print("\n[Step 1] Seeded Synthetic Sources:")
     for source_name, row_count in counts.items():
         print(f"  - {source_name}: {row_count} records")
 

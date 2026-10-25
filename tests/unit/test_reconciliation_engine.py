@@ -200,7 +200,7 @@ class TestDeterministicReconciliationEngine(unittest.TestCase):
         self.assertNotIn("RULE_MULTIPLE_CAPTURES", codes)
 
     def test_full_synthetic_doyuf_suite_and_reproducibility(self) -> None:
-        """Verify all synthetic Doyuf discrepancies are detected and re-running produces equivalent findings."""
+        """Verify all synthetic discrepancies are detected and re-running produces equivalent findings."""
         seed_all_synthetic_data(self.session)
 
         # Also add a stale pending order to test RULE_STALE_EVENT
